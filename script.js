@@ -49,10 +49,10 @@ const VideoSection = () => {
             height="315"
             src="https://www.youtube.com/embed/SEU_VIDEO_AQUI"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0" // Corrigido para camelCase
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
+            allowFullScreen // Corrigido para camelCase
+          ></iframe>
         </div>
       </div>
     </section>
