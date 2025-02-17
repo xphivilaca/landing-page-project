@@ -9,7 +9,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #fff;
-  background: linear-gradient(135deg, #1e1e1e, #121212); /* Gradiente escuro */
+  background: linear-gradient(135deg, #1e1e1e, #121212);
 }
 
 .container {
@@ -25,7 +25,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(135deg, #ff5722, #e64a19); /* Gradiente laranja */
+  background: linear-gradient(135deg, #ff5722, #e64a19);
   color: #fff;
   padding: 10px;
   text-align: center;
@@ -45,7 +45,7 @@ body {
 
 /* Header */
 header {
-  background: linear-gradient(135deg, #333, #1e1e1e); /* Gradiente escuro */
+  background: linear-gradient(135deg, #333, #1e1e1e);
   color: #fff;
   padding: 150px 0 100px;
   text-align: center;
@@ -64,7 +64,7 @@ header p {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background: linear-gradient(135deg, #ff5722, #e64a19); /* Gradiente laranja */
+  background: linear-gradient(135deg, #ff5722, #e64a19);
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -73,14 +73,14 @@ header p {
 }
 
 .btn:hover {
-  transform: scale(1.05); /* Efeito de zoom */
+  transform: scale(1.05);
 }
 
 /* Seção de Captura */
 #captura {
   padding: 50px 0;
   text-align: center;
-  background: linear-gradient(135deg, #1e1e1e, #121212); /* Gradiente escuro */
+  background: linear-gradient(135deg, #1e1e1e, #121212);
 }
 
 #captura h2 {
@@ -108,7 +108,7 @@ header p {
 #video {
   padding: 50px 0;
   text-align: center;
-  background: linear-gradient(135deg, #121212, #1e1e1e); /* Gradiente escuro */
+  background: linear-gradient(135deg, #121212, #1e1e1e);
 }
 
 #video h2 {
@@ -136,11 +136,63 @@ header p {
   border: 0;
 }
 
+/* Seção de Mockup */
+#mockup {
+  padding: 50px 0;
+  text-align: center;
+  background: linear-gradient(135deg, #1e1e1e, #121212);
+}
+
+#mockup h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#mockup p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Estilos do Swiper */
+.swiper-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mockup-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Navegação do Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff5722;
+}
+
+.swiper-pagination-bullet {
+  background: #fff;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff5722;
+}
+
 /* Seção de Benefícios */
 #beneficios {
   padding: 50px 0;
   text-align: center;
-  background: linear-gradient(135deg, #1e1e1e, #121212); /* Gradiente escuro */
+  background: linear-gradient(135deg, #1e1e1e, #121212);
 }
 
 #beneficios h2 {
@@ -172,7 +224,7 @@ header p {
 #depoimentos {
   padding: 50px 0;
   text-align: center;
-  background: linear-gradient(135deg, #121212, #1e1e1e); /* Gradiente escuro */
+  background: linear-gradient(135deg, #121212, #1e1e1e);
 }
 
 #depoimentos h2 {
@@ -214,7 +266,7 @@ header p {
 
 /* Seção CTA */
 #cta {
-  background: linear-gradient(135deg, #ff5722, #e64a19); /* Gradiente laranja */
+  background: linear-gradient(135deg, #ff5722, #e64a19);
   color: #fff;
   padding: 80px 0;
   text-align: center;
@@ -240,7 +292,7 @@ header p {
 #faq {
   padding: 50px 0;
   text-align: center;
-  background: linear-gradient(135deg, #1e1e1e, #121212); /* Gradiente escuro */
+  background: linear-gradient(135deg, #1e1e1e, #121212);
 }
 
 #faq h2 {
@@ -334,35 +386,4 @@ footer a:hover {
   #captura input[type="email"] {
     width: 100%;
   }
-}
-
-/* Seção de Mockup */
-#mockup {
-  padding: 50px 0;
-  text-align: center;
-  background: linear-gradient(135deg, #1e1e1e, #121212); /* Gradiente escuro */
-}
-
-#mockup h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-#mockup p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.mockup-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background: #333;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.mockup-image {
-  width: 100%;
-  border-radius: 10px;
 }
