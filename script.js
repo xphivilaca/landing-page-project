@@ -62,6 +62,26 @@ const VideoSection = () => {
   );
 };
 
+// MockupSection.jsx
+const MockupSection = () => {
+  return (
+    <section id="mockup">
+      <div className="container">
+        <h2>Visualize o [Nome do Produto]</h2>
+        <p>Confira como o [Nome do Produto] pode transformar sua experiência.</p>
+        <div className="mockup-container">
+          <img
+            src="https://via.placeholder.com/800x400" // Substitua pelo link da imagem do mockup
+            alt="Mockup do Produto"
+            className="mockup-image"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+
 // BenefitsSection.jsx
 const BenefitsSection = () => {
   return (
