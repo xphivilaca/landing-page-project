@@ -136,58 +136,6 @@ header p {
   border: 0;
 }
 
-/* Seção de Mockup */
-#mockup {
-  padding: 50px 0;
-  text-align: center;
-  background: linear-gradient(135deg, #1e1e1e, #121212);
-}
-
-#mockup h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-#mockup p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-/* Estilos do Swiper */
-.swiper-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background: #333;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mockup-image {
-  width: 100%;
-  border-radius: 10px;
-}
-
-/* Navegação do Swiper */
-.swiper-button-next,
-.swiper-button-prev {
-  color: #ff5722;
-}
-
-.swiper-pagination-bullet {
-  background: #fff;
-}
-
-.swiper-pagination-bullet-active {
-  background: #ff5722;
-}
-
 /* Seção de Benefícios */
 #beneficios {
   padding: 50px 0;
