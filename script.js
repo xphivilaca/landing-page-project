@@ -1,3 +1,6 @@
+// script.js
+const root = document.getElementById('root');
+
 // CountdownTimer.jsx
 const CountdownTimer = () => {
   const [timeLeft, setTimeLeft] = React.useState(86400); // 24 horas em segundos
@@ -53,46 +56,6 @@ const VideoSection = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-// MockupSection.jsx
-const MockupSection = () => {
-  return (
-    <section id="mockup">
-      <div className="container">
-        <h2>Visualize o [Nome do Produto]</h2>
-        <p>Confira como o [Nome do Produto] pode transformar sua experiência.</p>
-        <div className="swiper-container">
-          <div className="swiper-wrapper">
-            <div className="swiper-slide">
-              <img
-                src="https://via.placeholder.com/800x400" // Mockup 1
-                alt="Mockup do Produto 1"
-                className="mockup-image"
-              />
-            </div>
-            <div className="swiper-slide">
-              <img
-                src="https://via.placeholder.com/800x400" // Mockup 2
-                alt="Mockup do Produto 2"
-                className="mockup-image"
-              />
-            </div>
-            <div className="swiper-slide">
-              <img
-                src="https://via.placeholder.com/800x400" // Mockup 3
-                alt="Mockup do Produto 3"
-                className="mockup-image"
-              />
-            </div>
-          </div>
-          <div className="swiper-button-next"></div>
-          <div className="swiper-button-prev"></div>
-          <div className="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -182,4 +145,47 @@ const FAQSection = () => {
             <p>O prazo de entrega é de até 7 dias úteis para todo o Brasil.</p>
           </div>
           <div className="faq-item">
-            <h3>Posso devolver se não
+            <h3>Posso devolver se não gostar?</h3>
+            <p>Sim, oferecemos uma garantia de 30 dias para reembolso.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// Footer.jsx
+const Footer = () => {
+  return (
+    <footer>
+      <div className="container">
+        <p>&copy; 2023 [Nome da Empresa]. Todos os direitos reservados.</p>
+        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+        <div className="redes-sociais">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+// App.jsx
+const App = () => {
+  return (
+    <div>
+      <CountdownTimer />
+      <Header />
+      <VideoSection />
+      <BenefitsSection />
+      <TestimonialsSection />
+      <CTASection />
+      <FAQSection />
+      <Footer />
+    </div>
+  );
+};
+
+// Renderizar o App
+ReactDOM.render(<App />, root);
