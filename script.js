@@ -1,6 +1,3 @@
-// script.js
-const root = document.getElementById('root');
-
 // CountdownTimer.jsx
 const CountdownTimer = () => {
   const [timeLeft, setTimeLeft] = React.useState(86400); // 24 horas em segundos
@@ -69,18 +66,38 @@ const MockupSection = () => {
       <div className="container">
         <h2>Visualize o [Nome do Produto]</h2>
         <p>Confira como o [Nome do Produto] pode transformar sua experiência.</p>
-        <div className="mockup-container">
-          <img
-            src="https://via.placeholder.com/800x400" // Substitua pelo link da imagem do mockup
-            alt="Mockup do Produto"
-            className="mockup-image"
-          />
+        <div className="swiper-container">
+          <div className="swiper-wrapper">
+            <div className="swiper-slide">
+              <img
+                src="https://via.placeholder.com/800x400" // Mockup 1
+                alt="Mockup do Produto 1"
+                className="mockup-image"
+              />
+            </div>
+            <div className="swiper-slide">
+              <img
+                src="https://via.placeholder.com/800x400" // Mockup 2
+                alt="Mockup do Produto 2"
+                className="mockup-image"
+              />
+            </div>
+            <div className="swiper-slide">
+              <img
+                src="https://via.placeholder.com/800x400" // Mockup 3
+                alt="Mockup do Produto 3"
+                className="mockup-image"
+              />
+            </div>
+          </div>
+          <div className="swiper-button-next"></div>
+          <div className="swiper-button-prev"></div>
+          <div className="swiper-pagination"></div>
         </div>
       </div>
     </section>
   );
 };
-
 
 // BenefitsSection.jsx
 const BenefitsSection = () => {
@@ -198,6 +215,7 @@ const App = () => {
       <CountdownTimer />
       <Header />
       <VideoSection />
+      <MockupSection />
       <BenefitsSection />
       <TestimonialsSection />
       <CTASection />
@@ -208,4 +226,19 @@ const App = () => {
 };
 
 // Renderizar o App
-ReactDOM.render(<App />, root);
+ReactDOM.render(<App />, document.getElementById('root'));
+
+// Inicializar o Swiper após o carregamento da página
+document.addEventListener('DOMContentLoaded', () => {
+  new Swiper('.swiper-container', {
+    loop: true, // Permite rolar infinitamente
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+});
