@@ -1,6 +1,3 @@
-// script.js
-const root = document.getElementById('root');
-
 // CountdownTimer.jsx
 const CountdownTimer = () => {
   const [timeLeft, setTimeLeft] = React.useState(86400); // 24 horas em segundos
@@ -188,4 +185,4 @@ const App = () => {
 };
 
 // Renderizar o App
-ReactDOM.render(<App />, root);
+ReactDOM.render(<App />, document.getElementById('root'));
