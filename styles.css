@@ -250,6 +250,8 @@ body {
   padding: 80px 0;
   text-align: center;
   color: #fff;
+  position: relative;
+  overflow: hidden; /* Garante que não haja elementos saindo da área */
 }
 
 #cta h2 {
@@ -262,7 +264,9 @@ body {
   margin-bottom: 30px;
 }
 
+/* Ajuste no botão */
 #cta .btn {
+  display: inline-block;      /* Garante que o botão se comporte como bloco inline */
   background: #fff;
   color: #d81b60;
   padding: 15px 30px;
@@ -270,11 +274,19 @@ body {
   font-size: 1.1rem;
   text-decoration: none;
   transition: background 0.3s ease;
+  margin: 30px 0;             /* Espaço acima e abaixo do botão */
 }
 
 #cta .btn:hover {
   background: #f8bbd0;
 }
+
+/* Se o texto de garantia estiver sendo "empurrado" ou sobreposto */
+#cta .garantia {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
 
 /* FOOTER */
 footer {
